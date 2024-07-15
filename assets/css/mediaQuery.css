@@ -1,0 +1,811 @@
+/** MEDIA QUERY **/
+/* # MISURA DI BASE 320PX # */
+
+/*Smartphone*/
+/** ### 365px ### **/
+@media screen and (min-width:365px) {
+
+    /*MAIN*/
+    main section:nth-child(2) div>div {
+        /*sezione 2 div con h2 e h3*/
+        margin-right: 7%;
+    }
+
+    main section:nth-child(2) div>div h2 {
+        /*sezione 2 h2 dentro div(h2 e h3)*/
+        padding-top: 8%;
+    }
+
+    /**/
+
+    /*FOOTER*/
+    #copyright {
+        text-align: left;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+/** ### 430px ### **/
+@media screen and (min-width:430px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    /*HEADER*/
+    header {
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    header p:nth-child(3) {
+        /*secondo p sotto primo box*/
+        margin: 4% auto;
+    }
+
+    /**/
+
+    /*MAIN*/
+    main section:nth-child(2) div>div h2 {
+        /*sezione 2 h2 dentro div(h2 e h3)*/
+        padding-top: 15%;
+    }
+}
+
+/*Tablet*/
+/** ### 518px ### **/
+@media screen and (min-width:518px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    /*BOTTONI*/
+    .fakeButton,
+    .fakeButton2 {
+        /*stile COMUNE bottoni*/
+        padding: 3%;
+        width: 70%;
+    }
+
+    main .fakeButton,
+    main .fakeButton2 {
+        /*stile COMUNE bottoni*/
+        margin: 5% auto 5%;
+    }
+
+    footer .fakeButton2 {
+        /*bottone footer*/
+        margin: 5% auto 5%;
+    }
+
+    /**/
+
+    /*HEADER*/
+    header {
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+
+    header div:first-of-type p {
+        /*primo box con p e nav*/
+        padding: 1% 0;
+    }
+
+    header p:nth-child(2) {
+        /*primo testo dentro div*/
+        padding: 3%;
+        margin: 3% auto;
+        margin-top: 15%;
+    }
+
+    header p:nth-child(3) {
+        /*secondo testo dentro div*/
+        padding: 5%;
+    }
+
+    /**/
+
+    /*NAV*/
+    nav {
+        width: 85%;
+        font-size: 0.8em;
+    }
+
+    nav ul li {
+        padding: 2.5%;
+    }
+
+    /**/
+
+    /*MAIN*/
+    h1 {
+        font-size: 1.2em;
+    }
+
+    /* -section2- */
+    main section:nth-child(2) div>div h2 {
+        padding-top: 18%;
+    }
+
+    main section:nth-child(2) div>img:nth-child(2) {
+        /*icona dei 3 div*/
+        width: 20%;
+        margin-left: 25%;
+        padding-right: 2%;
+    }
+
+    main section:nth-child(2) div>div {
+        /*div con h2 e h3*/
+        width: 35%;
+        margin: 0 auto;
+        margin-right: 2%;
+    }
+
+    main section:nth-child(2) div>div h2 {
+        padding-top: 11%;
+        font-size: 0.6em;
+    }
+
+    main section:nth-child(2) div>div h3 {
+        padding: 1% 0;
+        font-size: 0.45em;
+    }
+
+    /*/*/
+
+    /* -section3- */
+    .subTitoli h3 {
+        font-size: 0.5em;
+        padding: 6%;
+    }
+
+    /*FOOTER*/
+    footer section h2 {
+        padding: 5% 0;
+    }
+
+    /* -get in touch- */
+    address:last-of-type {
+        margin-bottom: 2%;
+    }
+
+    address dl dd {
+        width: 58%;
+    }
+
+    address dl dt,
+    address dl dd {
+        padding: 2% 1%;
+    }
+}
+
+/** ### 735px ### **/
+@media screen and (min-width:735px) {
+    body {
+        font: 1.35rem;
+    }
+
+    /*BOTTONI*/
+    .fakeButton,
+    .fakeButton2,
+    main .fakeButton,
+    main .fakeButton2 {
+        /*stile COMUNE bottoni*/
+        padding: 2%;
+        width: 50%;
+        margin: 1% auto 6%;
+        font-size: 0.75em;
+    }
+
+    article .fakeButton2 { /*ultimo bottone dentro ultima sezione main*/
+        font-size: 0.6em;
+        margin-right: 66%;
+        width: 40%;
+    }
+
+    footer .fakeButton2 { /*bottone footer*/
+        width:100%;
+        padding:3%;
+        font-size: 1.6em;
+    }
+    /**/
+
+    /*HEADER*/
+    header {
+        padding-bottom: 1.5%;
+        padding-top: 1.5%;
+    }
+
+    header div:first-of-type p {
+        padding: 2% 0;
+        font-size: 1em;
+    }
+
+    header p:nth-child(2) {
+        /*primo testo dentro div*/
+        padding: 1%;
+        margin: 0.5% auto;
+        margin-top: 10%;
+        width: 95%;
+    }
+
+    header p:nth-child(3) {
+        /*secondo testo dentro div*/
+        padding: 1%;
+        width: 95%;
+        font-size: 0.9em;
+    }
+
+    /**/
+
+    /*NAV*/
+    nav {
+        width: 50%;
+        font-size: 0.85em;
+    }
+
+    /**/
+
+    /*MAIN*/
+    /* -section1- */
+    main section {
+        /*stile comune a tutte le sezioni*/
+        font-size: 1.1em;
+        padding: 1.5%;
+    }
+
+    .parSez {
+        /*p sotto h1*/
+        padding: 0 1% 6%;
+    }
+
+    /*/*/
+
+    /* -section2- */
+    main section:nth-child(2) div {
+        margin-bottom: 4%;
+    }
+
+    main section:nth-child(2) div>img:first-child {
+        /*prima immagine dei 3 div*/
+        margin-bottom: 1.5%;
+        margin-top: 0;
+    }
+
+    main section:nth-child(2) div>div h2 {
+        padding-top: 18%;
+    }
+
+
+    main section:nth-child(2) div>img:nth-child(2) {
+        /*icona dei 3 div*/
+        width: 15%;
+        margin-left: 30%;
+        padding-right: 2%;
+    }
+
+    main section:nth-child(2) div>div {
+        /*div con h2 e h3*/
+        width: 40%;
+        margin: 0 auto;
+        margin-right: 2%;
+    }
+
+    main section:nth-child(2) div>div h2 {
+        padding-top: 11%;
+        font-size: 0.6em;
+    }
+
+    main section:nth-child(2) div>div h3 {
+        padding: 1% 0;
+        font-size: 0.45em;
+    }
+
+    main section:nth-child(2) p,
+    main section:nth-child(3) div p {
+        /*p della sezione 2 e sezione 3*/
+        font-size: 0.55em;
+        margin-bottom: 8%;
+    }
+
+    /*/*/
+
+    /* -section3- */
+    .subTitoli h3 {
+        font-size: 0.45em;
+        padding: 5%;
+    }
+
+    /*/*/
+
+    /* -section4-*/
+    article>img:first-child {
+        /*stile icone di entrambi i titoli della sezione 4*/
+        width: 6%;
+        padding-right: 1%;
+    }
+
+    article h2 {
+        /*stile h2 di entrambi i titoli della sezione 4*/
+        font-size: 0.95em;
+    }
+
+    article:first-of-type>div {
+        /*bordo sotto articolo*/
+        width: 95%;
+        border-bottom: rgb(151, 151, 151) 2px solid;
+    }
+
+    article:first-of-type>div:last-of-type {
+        /*bordo sotto articolo*/
+        border-bottom: none;
+    }
+
+    article h2,
+    article>img:first-child {
+        /*stile comune icona e h2*/
+        margin-bottom: 7%;
+        margin-top: 15%;
+    }
+
+    article div>p:first-of-type {
+        /*data*/
+        width: 50%;
+        padding-left: 2%;
+        font-size: 0.45em;
+        padding-bottom: 1%;
+    }
+
+    article div h3 {
+        /*titolo articolo*/
+        padding-left: 2%;
+        font-size: 0.55em;
+        width: 70%;
+    }
+
+    article:first-of-type div p:nth-of-type(2) {
+        /*testo*/
+        clear: none;
+        width: 70%;
+        float: left;
+        padding-top: 2%;
+        padding-left: 2%;
+        border-bottom: none;
+    }
+
+    article:nth-of-type(2) div>p {
+        /*stile testo secondo articolo spotlight*/
+        font-size: 0.65em;
+    }
+
+    /*FOOTER*/
+    footer {
+        font-size: 0.7em;
+    }
+
+    footer section h2 {
+        font-size: 1.2em;
+        padding: 5% 0;
+    }
+
+    /* -get in touch*/
+    address {
+        width: 50%;
+        float: left;
+        margin-bottom: 6%;
+    }
+
+    address dl dt,
+    address dl dd {
+        padding: 1%;
+    }
+
+    /*/*/
+
+    /* -filler links- */
+    footer section:last-of-type div {
+        width: 46%;
+        float: left;
+    }
+
+    footer section:last-of-type div:first-of-type {
+        margin-right: 2%;
+    }
+
+    footer section:nth-of-type(2) div:nth-of-type(2) {
+        margin-bottom: 5%;
+    }
+
+    footer section:nth-of-type(2) div:nth-of-type(3) li:last-of-type {
+        border-bottom: none;
+        margin-bottom: 10%;
+    }
+
+    /*/*/
+
+    /* -copyright- */
+    #copyright {
+        font-size: 0.85em;
+        margin: 0 auto;
+        padding: 10% 15%;
+        border-top: 1px solid rgb(122, 121, 121);
+        width: 90%;
+    }
+}
+
+/*Desktop*/
+/** ### 880px ### **/
+@media screen and (min-width: 880px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    /*HEADER*/
+    header div:first-of-type p {
+        /*scritta zerofour*/
+        padding: 2% 0;
+        font-size: 0.9em;
+    }
+
+    #img {
+        top: 4%;
+    }
+
+    header div:first-of-type {
+        /*primo contenitore con scritta*/
+        margin-bottom: 10%;
+    }
+
+    nav {
+        top: 8%;
+    }
+    /*/*/
+
+    /*BOTTONI*/
+    footer .fakeButton2 { /*bottone footer*/
+        width:40%;
+        padding:2%;
+        font-size: 1.1em;
+        margin-right:60%;
+    }
+    /*/*/
+}
+
+/** ### 994px ### **/
+@media screen and (min-width: 994px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    /*HEADER*/
+    header {
+        padding: 5%;
+        padding-bottom: 3%;
+        font-size: 1em;
+    }
+
+
+    header div:first-child { /*div con menu*/
+        width: 95%;
+        margin: 1% auto;
+        border: 10px outset rgba(95, 94, 94, 0.148);
+        top: 0.3%;
+        left: 2.5%;
+        border-radius: 10px;
+        padding:0;
+        position:absolute;
+    }
+
+    header div:first-of-type p { /*zerofour*/
+        font-size: 0.7em;
+        float: left;
+        width: 15%;
+        padding: 1%;
+        padding-top:3%;
+    }
+
+
+    /* -secondo div */
+    header p:nth-child(2) {
+        /*primo testo dentro div*/
+        padding: 1%;
+        width: 98%;
+        margin-top: 15%;
+    }
+
+    header p:nth-child(3) {
+        /*secondo testo dentro div*/
+        padding: 0.5%;
+        width: 98%;
+    }
+
+    .fakeButton { /*stile COMUNE bottoni*/
+        padding:2%;
+        width: 55%;
+        font-size: 1.2em;
+    }
+
+    /*/*/
+
+    /*NAV*/
+    #img, nav>div {
+        display: none;
+    }
+
+    nav {
+        float: right;
+        width: 85%;
+        font-size: 0.87em;
+        padding-top:1%;
+        text-align: right;
+        position: static;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: inline-block; /*allineamento*/
+        width: calc(100% / 5 - 1%);
+        margin:0;
+        border-bottom: none;
+        font-size:0.6em;
+        position:relative;
+    }
+
+    nav ul li:last-of-type {
+        margin-right: 0;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(49, 49, 50);
+    }
+
+    /* -- secondo livello nav -- */
+    nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(31, 31, 32, 0.873);
+    top:100%;
+    left:25%;
+    width:150%;
+    }
+
+    nav ul li:hover ul { /*secondo livello appare*/
+        display: block;
+    }
+
+    nav ul ul li {
+        width:100%;
+        text-align: left;
+    }
+
+    nav ul ul li a{
+        padding: 3%;
+        border-bottom: none;
+        font-size: 2em;
+    }
+
+    nav ul ul li:hover a {
+        color:rgb(200, 200, 199);
+    }
+    /*/*/
+    /**/
+
+    /*MAIN*/
+    .container > div {
+        width: 95%;
+    }
+
+    main section {
+        font-size: 1em;
+        padding: 5% 0;
+    }
+    /* section 2 */
+    main section:nth-child(2) div {/*sezione con dentro i 3 div*/
+        width:32.5%;
+        float: left;
+        padding:1%;
+        margin-right: calc(100% - 99% + 0.25%); /*spazio tra box*/
+        }
+
+        main section:nth-child(2) div:first-child { /*prima immagine del primo div*/
+            margin-top:0;
+        }
+        
+        main section:nth-child(2) div:last-of-type { /*elimino spazio destro ultima box*/
+        margin-right: 0;
+    }
+    
+    main section:nth-child(2) div>img:nth-child(2) { /*stile icone*/
+        width: 20%;
+        margin-left: 1%;
+    }
+
+    main section:nth-child(2) div>div { /*div che contiene h2 e h3*/
+            width: 60%;
+            margin-top: 1%;
+    }
+
+    main section:nth-child(2) div>div h2 { /*h2*/
+    padding-top: 1%;
+    font-size: 0.6em;
+}
+
+    main section:nth-child(2) div>div h3 { /*h3*/
+        font-size: 0.4em;
+    }
+    
+    main section:nth-child(2) p{
+        clear: both;
+        margin-bottom: 2%;
+        padding: 0 4%;
+    }
+    /*/*/
+
+        /* section 3 */
+        main section:nth-child(3){
+            padding-top: 0;
+        } 
+
+        main section:nth-child(3) div{ /*allineamento dei due div*/
+            float:left;
+            width:50%;
+            padding: 0 2% 0 1%;
+            font-size: 0.9em;
+        }
+        
+        main .fakeButton { /*bottone azzurro*/
+            width: 55%;
+        }
+        /*/*/
+
+        /* section 4 */
+
+        article{
+            font-size: 0.8em;
+        }
+
+        article h2{ /*h2 di entrambi gli articoli*/
+            padding-bottom: 10%;
+        }
+
+        article>img:first-child  { /*grandezza icone vicino a h2*/
+            width:10%;
+        }
+
+        article:nth-of-type(2)>img:first-child { /*grandezza icone vicino a h2*/
+            width:13%;
+        }
+
+        article h2, article>img:first-child, article:nth-of-type(2) h2, article:nth-of-type(2)>img:first-child  { /*diminuita distanza tra le sezione*/
+        margin-top: 0;
+    }
+
+    article:first-of-type { /*allineamento*/
+        float:left;
+        width:50%;
+    }
+
+    article:nth-of-type(2) { /*allineamento*/
+        float:right;
+        width: 47%;
+        padding: 0 5%;
+    }
+
+    article .fakeButton2 {
+        width: 90%;
+        padding: 4%;
+    }
+
+    main section:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+/** ### 1056px ### **/
+@media screen and (min-width:1056px){
+    header div:first-of-type p { /*zerofour*/
+        font-size: 0.7em;
+        width: 10%;
+        padding-bottom: 2%;
+    }
+
+    nav {
+        font-size: 0.85em;
+        width: 80%;
+    }
+
+    header p:nth-child(3) { /*allineamento*/
+    font-size: 1em; /*font-size secondo paragrafo*/
+    float: left;
+    width: 58%;
+    text-align: right;
+}
+    /*/*/
+
+    /*BOTTONI*/
+    header .fakeButton { /*allineamento*/
+        padding:2.5%;
+        margin-top:4%;
+        margin-right: 5%;
+        float: right;
+        width: 35%;
+        font-size: 0.9em;
+    }
+
+        footer .fakeButton2 { /*bottone footer*/
+            width:35%;
+            padding:3%;
+            font-size: 0.9em;
+            margin-right:70%;
+        }
+    /*/*/
+
+    /* MAIN */
+    article h2 {
+        font-size: 1.2em;
+    }
+        /*/*/
+
+            /* FOOTER */
+            footer section{
+                margin-top: 4%;
+                margin-bottom: 5%;
+            }
+            footer section:first-child { /* sezione con 3 ul*/
+                float:right;
+                width: 49%;
+            }
+
+            footer section:nth-of-type(2){ 
+                float:left;
+                width: 49%;
+            }
+
+            footer section h2 { /*h2 footer*/
+                padding-top: 3%;
+                padding-bottom: 5%;
+            }
+
+            address, address:last-of-type {
+                margin-bottom: 0;
+            }
+
+            address dl dd {
+                overflow: auto;
+                font-size: 0.8em;
+                padding-left: 3%;
+            }
+
+            #copyright{
+                clear: both;
+                text-align: center;
+                padding-top: 3%;
+                width:98%;
+            }
+        /*/*/
+}
+
+/*SCHERMI GRANDI*/
+/** ### MISURA MAX 1200px ### **/
+@media screen and (min-width:1200px) {
+    body {
+        font-size: 1.8rem;
+        margin: 0 auto;
+    }
+
+    #superContenitore { 
+        max-width: 1200px;
+    }
+
+    /*FOOTER*/
+    address dl dd {
+        font-size: 0.7em;
+        padding-left: 5%;
+    }
+
+}
+
+

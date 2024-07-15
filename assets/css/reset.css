@@ -1,0 +1,166 @@
+/*MODELLO IBRIDO RESET/NORMALIZE*/
+
+html { 
+	line-height: 1.15; /* 1corregge il line height in tutti i browser */
+    -webkit-text-size-adjust: 100%; /* previene il cambiamento dei font-size dopo la rotazione in iOS. */
+}
+
+body {
+	line-height: 1;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { /*rimuove i padding, margin, border in tutti gli elementi di tutti i browser*/
+	margin: 0; 
+	padding: 0;
+	border: 0;
+	font-size: 100%; /*grandezza font 100%*/
+	font: inherit; /*font si eredita da secondo foglio CSS*/
+	vertical-align: baseline;
+}
+
+h1 {
+	font-size: 2em; /*grandezza font h1*/
+	margin: 0.67em 0; /*corregge i margin di h1*/
+}
+
+main {
+	display: block; /*reinderizza il main in IE*/
+}
+
+b, strong {
+	font-weight: bolder; /*aggiunge il corretto font weight in Chrome, Edge e Safari*/
+}
+
+hr {
+	box-sizing: content-box; /* aggiunge il corretto box sizing in firefox */
+	height: 0; /* aggiunge il corretto box sizing in firefox */
+	overflow: visible; /* mostra l'overflow in Edge e IE */
+}
+
+a {
+	background-color: transparent; /*toglie lo sfondo grigio nei link attivi in IE 10*/
+}
+
+img {
+	border-style: none; /*rimuove il border in immagini dentro i link in IE 10*/
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { /*HTML5 display-role resettati per vecchi browser*/
+	display: block;
+}
+
+ol, ul { /*rimosse le punteggiature nelle liste*/
+	list-style: none;
+} 
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+code, kbd, samp {
+	font-family: monospace, monospace; /* corretta eredita' e scala del font size in tutti i browser */
+	font-size: 1em; /* corregge errori em font size in tutti i browser */
+}
+
+abbr[title] {
+	border-bottom: none; /* rimuove il bottom border in chrome 57 */
+	text-decoration: underline; /* aggiunge la corretta decorazione del testo in Chrome, Edge, IE, Opera e Safari */
+	text-decoration: underline dotted; /* aggiunge la corretta decorazione del testo in Chrome, Edge, IE, Opera e Safari */
+}
+
+sub, sup { /*previene che sub e sup vengano modificati da line height in tutti i browser*/
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+button, input, optgroup, select, textarea {
+	font-family: inherit; /* cambia il font style in tutti i browser */
+	font-size: 100%; /* font size 100% in tutti i browser */
+	line-height: 1.15; /* rimuove i margini su firefox e safari */
+	margin: 0; /* rimuove i margini su firefox e safari */
+}
+
+button, input { /*mostra overflow in IE e Edge*/
+	overflow: visible;
+}
+
+button, select { /* rimuove eredita text transform in firefox*/
+	text-transform: none;
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner { /*rimuove gli inner border e padding in firefox*/
+	border-style: none;
+	padding: 0;
+}
+
+fieldset { /*corregge i padding in firefox*/
+	padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+	box-sizing: border-box; /* corregge il testo in edge e IE */
+	color: inherit; /* permette la corretta eredita' del colore da fieldset in IE */
+	display: table; /* corregge il testo in edge e IE */
+	max-width: 100%; /* corregge il testo in edge e IE */
+	padding: 0; /* Rimuove il padding */
+	white-space: normal; /* corregge il testo in edge e IE */
+}
+
+textarea { /*rimuove la scrollbar verticale di default in IE 10+*/
+	overflow: auto;
+}
+
+[type="checkbox"], [type="radio"] {
+	box-sizing: border-box; /* aggiunge il corretto box sizing in IE 10 */
+	padding: 0; /* rimuove il padding in IE 10 */
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { /*corregge stile cursore di incremento e diminuizione in Chrome*/
+	height: auto;
+}
+
+details {
+	display: block; /*corretto display in edge, IE 10+ e firefox*/
+}
+
+summary { /*correttp display in tutti i browser*/
+	display: list-item;
+}
+
+template {
+	display: none; /*display corretto in IE10+*/
+}

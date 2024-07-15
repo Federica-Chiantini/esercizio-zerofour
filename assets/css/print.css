@@ -1,0 +1,239 @@
+@media print { 
+    body {
+        font-family:'Courier New', Courier, monospace;
+        line-height: 1.2;
+        font-size: 1.2em;
+        margin: 0;
+        color: rgb(31, 30, 30);
+    }
+    
+    #supercontenitore{ /*box con dentro tutti i box header main e footer*/
+        max-width: 98vw; /*nel caso ci fossero dei bordi per far stampare tutto il contenuto*/
+    }
+    /***/
+
+        /*HEADER*/
+        header{
+            background-image: none; /*tolgo immagine di sfondo*/
+            padding: 0;
+            margin:0;
+            }
+
+        header div:first-of-type, header div section { /*nascosto la barra di navigazione e link esterni*/
+            display: none;
+        }
+        header div:nth-of-type(2), header div:nth-of-type(2) a{ /*colore del testo piu scuro*/
+            margin: 0 auto;
+        }
+
+        header p:nth-child(2){ /*testo centrale in alto*/
+            padding:1%;
+            margin: 1% auto;
+            font-size: 1em;
+        }
+
+        header p:nth-child(2), header p:nth-child(2) a{
+            color:rgb(5, 5, 5)
+        }
+
+        header p:nth-child(3), header .fakeButton{
+            display: none;
+        }
+        /***/
+
+            /*MAIN*/
+        main { /*colore testo main*/
+            color: rgb(79, 77, 77);
+            font-size: 1.1em;
+        }
+
+        main, .container, main section, .container > div{
+            background-color: rgb(218, 216, 216);
+        }
+
+        .container > div {
+            border-bottom:  rgb(151, 151, 151) 5px double;
+        }
+
+        main section:first-of-type {
+            padding-top: 0.5%;
+        }
+
+        /* - section 1 - */
+        section:first-of-type>div:first-child{
+            padding: 1%;
+        }
+
+        h1 {
+            margin: 0 auto;
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+        .parSez { /*p sotto h1*/
+            font-size:0.6em;
+            padding: 1%;
+            text-align: center;
+        }
+        /* -- */
+
+        /* - section 2 - */
+        main section:nth-child(2) div { /*sezione con dentro i 3 div immagini*/
+            margin-bottom: 1%;
+            padding:3%;
+        }
+
+        main section:nth-child(2) div:first-child { /*primo div*/
+            margin-top: 2%;
+        }
+
+        main section:nth-child(2) div>img:first-child{ /*stile immagini grandi dei 3 div*/
+            width:  85%;
+            margin: 0 auto;
+        }
+
+        main section:nth-child(2) div>img:nth-child(2){ /*stile icone*/
+            width:12%;
+            margin: 2% 0 0 25% ;
+            padding-right:1%;
+            float:left;
+        }
+
+        main section:nth-child(2) div>div { /*stile mini div con dentro h2 e h2 vicino a icone*/
+            font-size: 0.8em;
+            color:rgb(34, 34, 34);
+            margin-top: 2%;
+            padding-left: 0;
+            width: 40%;
+            float:left;
+        }
+
+        main section:nth-child(2) p { /*paragrafo sotto le tre immagini e i 2 headings*/
+            margin-bottom: 1.5%;
+            padding-bottom:2%;
+            text-align: left;
+        }
+        /* -- */
+        
+        /* - section 3 - */
+        main section:nth-of-type(2) h2 { /*h2 dei due div affiancati*/
+            font-size: 1.2em;
+            padding-bottom: 0;
+        }
+        
+        main section:nth-of-type(2) h3 { /*h3 dei due div affiancati*/
+            font-size: 0.75em;
+            padding:3%;
+        }
+
+        main section:nth-of-type(2) p { /*p dei due div affiancati*/
+            padding: 2%;
+            margin-bottom: 5%;
+        }
+        
+        main .fakeButton, main .fakeButton2 { /*bottoni tolti*/
+        display: none;
+        }
+        /* -- */
+
+        /* - section 4 - */
+        article h2{ /*h2 di entrambi gli articoli*/
+            padding-bottom: 1%;
+            font-size: 1.3em;
+        }
+
+        article>img:first-child  { /*grandezza icone vicino a h2*/
+            width:10%;
+        }
+
+        article h2, article>img:first-child, article:nth-of-type(2) h2, article:nth-of-type(2)>img:first-child  { /*diminuita distanza tra le sezione*/
+        margin-top: 0;
+    }
+
+    article:first-of-type { /*allineamento*/
+        float:left;
+        width:50%;
+    }
+
+    article:nth-of-type(2) { /*allineamento*/
+        float:right;
+        width: 47%;
+        padding: 0 5%;
+    }
+
+    article:nth-of-type(2)>img:first-child { /*grandezza icone vicino a h2*/
+        width:13%;
+    }
+
+    article div>p:nth-of-type(2){
+        font-size: 0.55em;
+    }
+
+    article:nth-of-type(2) div>p, article:nth-of-type(2) div>p:nth-of-type(2){
+        font-size: 0.75em;
+    }
+
+    article .fakeButton2 {
+        display: none;
+    }
+
+    main section:last-of-type {
+        padding-bottom: 0;
+    }
+
+    article:first-of-type div:last-of-type p {
+        /*bordo sotto articolo*/
+        border-bottom: none;
+    }
+        /* -- */
+        /***/
+
+    /*FOOTER*/
+    footer {
+        font-size: 0.9em;
+        background-color: rgb(190, 188, 188);
+    }
+
+    footer section h2 {
+        font-size: 1.4em;
+        padding: 1% 0;
+    }
+
+    footer section:first-child div:first-of-type a{
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    footer .fakeButton2 {
+        display: none;
+    }
+
+    /* -get in touch*/
+    address {
+        width: 50%;
+        float: left;
+        margin-bottom: 6%;
+    }
+
+    address dl dt,
+    address dl dd {
+        padding: 1%;
+    }
+    /*/*/
+
+    /* -filler links- */
+    footer section:last-of-type div {
+        display: none;
+    }
+    /*/*/
+
+    #copyright{
+        font-size: 1em;
+        color:rgb(35, 33, 33);
+        text-align: center;
+        padding-top: 0;
+        width:98%;
+        margin:1%;
+    }
+    /***/
+}
